@@ -8,6 +8,7 @@
 body
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4;
 }
 
 a
@@ -23,9 +24,103 @@ p
 
 /* Utility Classes */
 
-.primary-text
+.container
+{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+
+.text-center
+{
+    text-align: center;
+}
+
+.text-primary
 {
     color: #93cb52;
+}
+
+.bg-light 
+{
+    background: #f4f4f4;
+    color: #333;
+}
+  
+.bg-dark 
+{
+    background: #333;
+    color: #fff;
+}
+  
+.bg-primary 
+{
+    background: #93cb52;
+    color: #fff;
+}
+
+.l-heading
+{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading
+{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+
+}
+
+.lead
+{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.btn
+{
+    display: inline-block;
+    color: #fff;
+    background: #93cb52;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-dark
+{
+    background: #333;
+    color: #fff;
+}
+
+.btn:hover
+{
+    background: #7ab436;
+}
+
+.list
+{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li
+{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
 }
 
 
@@ -61,4 +156,87 @@ p
 {
     background: #93cb52;
     border-radius: 5px;
+}
+
+
+/* Showcase */
+
+#showcase
+{
+    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 89.5vh; /* 100 */
+    color: #fff;
+}
+
+#showcase .showcase-content
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;
+    align-items: center; 
+    height: 89.5%;   /* 100 */
+    padding: 0 2rem;
+
+    /* Overlay */
+
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.4); /* a - alpha - gives transparency */
+}
+
+/* Section: What We Do */
+#what .items
+{
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item
+{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i
+{
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who
+{
+    display: flex;
+}
+
+#who div
+{
+    flex: 1;
+}
+
+#who .who-img
+{
+    background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+
+/* Clients */
+
+#clients .items
+{
+    display: flex;
+}
+
+#clients .items img
+{
+    display: block;
+    margin: auto;
+    width: 60%;
 }
