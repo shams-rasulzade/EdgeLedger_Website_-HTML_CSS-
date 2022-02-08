@@ -26,7 +26,7 @@ function initMap() {
   
 
 
-  
+
   // Smooth Scrolling
   $('#navbar a, .btn').on('click', function(event) {
     if (this.hash !== '') {
@@ -38,7 +38,7 @@ function initMap() {
         {
           scrollTop: $(hash).offset().top - 100
         },
-        800
-      );
+        800 
+      ); //800 - speed in milliseconds
     }
   });
