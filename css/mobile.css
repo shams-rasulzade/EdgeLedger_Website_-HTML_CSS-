@@ -18,3 +18,75 @@
     align-self: center; /* aligns icon */
     margin-bottom: 0;
 }
+
+/* Smartphones */
+@media(max-width: 500px)
+{
+    #navbar
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo
+    {
+        margin-bottom: 0.5rem; /* ? */
+        text-align: center;
+    }
+
+    #navbar ul 
+    {
+        padding: 0.5rem; /* ? */
+    }
+
+
+    #showcase .showcase-content
+    {
+        top:110px;
+    }
+
+
+    #who 
+    {
+        display: block;
+    }
+
+    #who .who-img
+    {
+        display: none;
+    }
+
+    #clients .items img 
+    {
+        width: 80%;
+    }
+
+    #contact
+    {
+        flex-direction: column;
+    }
+
+    #contact .map /* it's for displaying map */
+    {
+        height: 200px;
+        border-top: 4px solid #333;
+    }
+}
+
+@media(max-height: 568px)
+{
+    #showcase .showcase-content 
+    {
+        top: 140px;
+        margin-top: -2rem;
+    }
+    .l-heading
+    {
+        font-size: 3rem;
+    }
+
+    .lead 
+    {
+        font-size: 1rem;
+    }
+}

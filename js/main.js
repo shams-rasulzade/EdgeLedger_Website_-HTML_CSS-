@@ -1,4 +1,5 @@
 // Initialize and add the map
+
 function initMap() {
     // Your location
     const loc = { lat: 42.361145, lng: -71.057083 };
@@ -13,8 +14,8 @@ function initMap() {
   
 
 
-
   // Sticky menu background
+
   window.addEventListener('scroll', function() {
     if (window.scrollY > 150) {
       document.querySelector('#navbar').style.opacity = 0.9;
@@ -25,9 +26,8 @@ function initMap() {
   
   
 
-
-
   // Smooth Scrolling
+
   $('#navbar a, .btn').on('click', function(event) {
     if (this.hash !== '') {
       event.preventDefault();
